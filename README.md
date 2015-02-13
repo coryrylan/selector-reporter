@@ -1,5 +1,5 @@
-<h1>Start Up</h1>
+<h1>Selector Reporter</h1>
 
 <p>
-Base of my startup projects.
+A simple library to help report deprecated attributes or CSS classes in your html.
 </p>

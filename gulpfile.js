@@ -7,7 +7,8 @@ var jsLibraries = [
 ];
 
 var jsSource = [
-    './App/JavaScript/Src/**/*.js'
+    './App/JavaScript/Src/selector-reporter.js',
+    './App/JavaScript/Src/app.js'
 ];
 
 var sassSource = [
