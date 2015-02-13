@@ -32,9 +32,17 @@ gulp.task('styles', function() {
 });
 
 gulp.task('js', function() {
+    gulp.src('./App/JavaScript/Src/selector-reporter.js')
+        //.pipe(to5())
+        .pipe(gulp.dest('./Src/'))
+        .pipe(plug.rename({ suffix: '.min' }))
+        .pipe(plug.uglify({ mangle: true }))
+        .pipe(gulp.dest('./Src/'));
+
+
     return gulp
         .src(jsLibraries.concat(jsSource))
-        .pipe(to5())
+        //.pipe(to5())
         .pipe(plug.concat('all.js'))
         .pipe(gulp.dest('./Build/Js'))
         .pipe(plug.rename({ suffix: '.min' }))
