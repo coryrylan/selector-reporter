@@ -4,7 +4,7 @@ A simple library to help report deprecated attributes or CSS classes in your htm
 
 ![Image of selector-reporter](https://github.com/splintercode/selector-reporter/blob/master/App/Content/Images/example.JPG?raw=true)
 
-```javascipt
+```javascript
 selectorReporter.run({
     //production: true,         // Optional if wanting to run outside of localhost
     prefix: 'mywebsite.com',    // Optional if messages should be prefixed
